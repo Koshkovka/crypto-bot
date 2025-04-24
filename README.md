@@ -99,7 +99,3 @@ The bot integrates with:
 
 ## 📜 License  
 MIT License. See `LICENSE` for details.  
-
----  
-*Contact: [your.email@example.com](mailto:your.email@example.com)*  
-*(Replace with actual contact details before publishing)*
