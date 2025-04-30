@@ -1,10 +1,10 @@
 #pragma once
 
-#include "utils/parseJSON.h"
-#include <pqxx/pqxx>
-#include <iostream>
+#include <chrono>
 #include <cstdlib>
-#include <thread> 
-#include <chrono> 
+#include <iostream>
+#include <thread>
+#include <pqxx/pqxx>
+#include "utils/parseJSON.h"
 
 pqxx::connection create_connection_to_postgres();

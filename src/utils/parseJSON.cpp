@@ -3,11 +3,12 @@
 using json = nlohmann::json;
 
 bool getConfigValue(const std::string& key, std::string& data) {
-	std::string config_path = std::filesystem::current_path().parent_path().parent_path().parent_path().string() + "/config.json";
+	std::string config_path = (std::filesystem::current_path() / "config.json").string();
 
 	std::ifstream config_file(config_path);
 	if (!config_file.is_open()) {
-		std::cerr << "Error: could not open config.json" << std::endl;
+
+		std::cerr << "Error: could not open config.json, path: " << config_path<<  std::endl;
 		return false;
 	}
 

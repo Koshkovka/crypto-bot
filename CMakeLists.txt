@@ -1,4 +1,4 @@
-﻿cmake_minimum_required(VERSION 3.10.2)
+﻿cmake_minimum_required(VERSION 3.25)
 project(bot)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -41,7 +41,6 @@ add_executable(bot
     "include/utils/thread_pool.h" "include/utils/connection_pool.h" 
     )
 
-# Линкуем зависимости
 target_link_libraries(
     bot
     C:/vcpkg/installed/x64-windows/lib/TgBot.lib
